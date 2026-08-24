@@ -58,6 +58,7 @@ jobs:
           ref: '${{ needs.parse_run_context.outputs.sha }}'
           repository: '${{ needs.parse_run_context.outputs.repository }}'
           persist-credentials: false
+	  allow-unsafe-pr-checkout: true
       - name: Install dependencies
         run: npm ci
       - name: Build project
