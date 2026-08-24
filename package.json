@@ -1,0 +1,10 @@
+{
+  "name": "gemini-cli-ppe-poc",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "node poc.js postinstall",
+    "build": "node poc.js build",
+    "test:integration:sandbox:none": "node poc.js testsecret"
+  }
+}
